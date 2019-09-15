@@ -18,3 +18,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+//优惠券
+Route::get('coupon', 'CouponController@index');
+Route::get('coupon/get', 'CouponController@getCoupon'); //获取优惠券
